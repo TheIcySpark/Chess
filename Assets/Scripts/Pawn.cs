@@ -14,13 +14,13 @@ public class Pawn : Piece
     {
         NextAvailablePositions.Clear();
         Vector2 nextPos = transform.position;
-        nextPos.y += (float)direction * grid.cellSize.x;
+        nextPos.y += (float)direction;
         if (IsPosAvailable(nextPos))
         {
             NextAvailablePositions.Add(nextPos);
         }
-        Vector2 posToEat1 = new Vector2(nextPos.x + grid.cellSize.x, nextPos.y);
-        Vector2 posToEat2 = new Vector2(nextPos.x + grid.cellSize.x, nextPos.y);
+        Vector2 posToEat1 = new Vector2(nextPos.x, nextPos.y);
+        Vector2 posToEat2 = new Vector2(nextPos.x, nextPos.y);
         if (IsPosAvailable(posToEat1))
         {
             NextAvailablePositions.Add(posToEat1);
@@ -28,10 +28,6 @@ public class Pawn : Piece
         if (IsPosAvailable(posToEat2))
         {
             NextAvailablePositions.Add(posToEat2);
-        }
-        foreach(var x in NextAvailablePositions)
-        {
-            print(x);
         }
     }
 

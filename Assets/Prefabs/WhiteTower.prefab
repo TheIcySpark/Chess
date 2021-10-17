@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &941123696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682891444582853246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3170538c620a3ee489e9c89081f3a8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Color: 1
+  NextAvailablePositions: []
+--- !u!1001 &6443266051985899387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1844202757957899524, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 379117033666059060, guid: 49a3a0890a6c1864d9b73a4439611ccf, type: 3}
+    - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_Name
+      value: WhiteTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393009045235171810, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8095238
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393009045235171810, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.89285713
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+--- !u!1 &4682891444582853246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+  m_PrefabInstance: {fileID: 6443266051985899387}
+  m_PrefabAsset: {fileID: 0}

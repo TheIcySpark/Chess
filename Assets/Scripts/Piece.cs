@@ -4,10 +4,8 @@ using UnityEngine;
 
 public abstract class Piece : MonoBehaviour
 {
-    public enum Colors { Black, White};
+    public enum Colors {Black, White};
     [SerializeField] public Colors Color;
-
-    [SerializeField] public Grid grid;
 
     public List<Vector2> NextAvailablePositions;
 

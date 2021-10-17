@@ -15,13 +15,13 @@ public class Tower : Piece
         directions.Add(new Vector2(-1, 0));
         for(int i = 0; i < 4; i++)
         {
-            nextPos = new Vector2(transform.position.x + directions[i].x * grid.cellSize.x,
-                                  transform.position.y + directions[i].y * grid.cellSize.x);
+            nextPos = new Vector2(transform.position.x + directions[i].x,
+                                  transform.position.y + directions[i].y);
             while (IsPosAvailable(nextPos))
             {
                 NextAvailablePositions.Add(nextPos);
-                nextPos.x += directions[i].x * grid.cellSize.x;
-                nextPos.y += directions[i].y * grid.cellSize.y;
+                nextPos.x += directions[i].x;
+                nextPos.y += directions[i].y;
             }
         }
     }
