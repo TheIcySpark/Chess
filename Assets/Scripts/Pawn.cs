@@ -9,19 +9,18 @@ public class Pawn : Piece
 
     [SerializeField] public Directions direction;
 
-    public List<Vector2> NextAvailablePositions;
 
     public override void GenerateNextAvailablePositions()
     {
         NextAvailablePositions.Clear();
         Vector2 nextPos = transform.position;
-        nextPos.y += (float)direction * 2;
+        nextPos.y += (float)direction * grid.cellSize.x;
         if (IsPosAvailable(nextPos))
         {
             NextAvailablePositions.Add(nextPos);
         }
-        Vector2 posToEat1 = new Vector2(nextPos.x + 2, nextPos.y);
-        Vector2 posToEat2 = new Vector2(nextPos.x - 2, nextPos.y);
+        Vector2 posToEat1 = new Vector2(nextPos.x + grid.cellSize.x, nextPos.y);
+        Vector2 posToEat2 = new Vector2(nextPos.x + grid.cellSize.x, nextPos.y);
         if (IsPosAvailable(posToEat1))
         {
             NextAvailablePositions.Add(posToEat1);
@@ -38,7 +37,7 @@ public class Pawn : Piece
 
     void Start()
     {
-        GenerateNextAvailablePositions();
+
     }
 
     void Update()
