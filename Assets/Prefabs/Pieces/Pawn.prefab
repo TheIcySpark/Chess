@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf31d66530ce576498b6a639cb947263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 1
+  Settings: {fileID: 11400000, guid: 9018191fac383ce45aa692356f128783, type: 2}
   NextAvailablePositions: []
   direction: 1
 --- !u!1001 &8176206495052975841
@@ -22,9 +22,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1844202757957899524, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899524, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_Name
-      value: WhitePawn
+      value: Pawn
       objectReference: {fileID: 0}
     - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_IsActive
@@ -36,11 +48,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_LocalPosition.z

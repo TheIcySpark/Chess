@@ -4,33 +4,26 @@ using UnityEngine;
 
 public abstract class Piece : MonoBehaviour
 {
-    public enum Colors {Black, White};
-    [SerializeField] public Colors Color;
-
+    public PieceSettings Settings;
     public List<Vector2> NextAvailablePositions;
-
     public abstract void GenerateNextAvailablePositions();
 
-    void Start()
+    protected virtual void Start()
     {
-
-    }
-
-    void Update()
-    {
-        
+        GetComponent<SpriteRenderer>().sprite = Settings.sprite;
+        print(Settings.sprite);
     }
 
     public bool IsPosAvailable(Vector2 pos)
     {
-        if(!( pos.x >= 1 && pos.x <= 15 && pos.y >= 1 && pos.y <= 15 ))
+        if(!( pos.x >= 1.5 && pos.x <= 8.5 && pos.y >= 1.5 && pos.y <= 8.5 ))
         {
             return false;
         }
         Collider2D collider = Physics2D.OverlapCircle(pos, 1f);
         if (collider)
         {
-            if(collider.gameObject.GetComponent<Piece>().Color == Color)
+            if(collider.gameObject.GetComponent<Piece>().Settings.Color == Settings.Color)
             {
                 return false;
             }
@@ -42,10 +35,4 @@ public abstract class Piece : MonoBehaviour
     {
         transform.position = pos;
     }
-
-    public void HasBeenEaten()
-    {
-        Destroy(gameObject);
-    }
-
 }

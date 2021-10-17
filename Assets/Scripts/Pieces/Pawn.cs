@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Pawn : Piece
 {
-
     public enum Directions { Up = 1, Down = -1};
-
-    [SerializeField] public Directions direction;
+    public Directions direction;
 
 
     public override void GenerateNextAvailablePositions()
@@ -29,15 +27,5 @@ public class Pawn : Piece
         {
             NextAvailablePositions.Add(posToEat2);
         }
-    }
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        
     }
 }
