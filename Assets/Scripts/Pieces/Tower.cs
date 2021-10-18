@@ -20,14 +20,13 @@ public class Tower : Piece
             while (IsPosAvailable(nextPos))
             {
                 NextAvailablePositions.Add(nextPos);
+                if (PieceToEatInPos(nextPos))
+                {
+                    break;
+                }
                 nextPos.x += directions[i].x;
                 nextPos.y += directions[i].y;
             }
         }
-    }
-
-    private void Start()
-    {
-        GenerateNextAvailablePositions();
     }
 }

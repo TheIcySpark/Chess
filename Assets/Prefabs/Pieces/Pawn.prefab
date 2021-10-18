@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf31d66530ce576498b6a639cb947263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Settings: {fileID: 11400000, guid: 9018191fac383ce45aa692356f128783, type: 2}
+  Settings: {fileID: 0}
   NextAvailablePositions: []
   direction: 1
 --- !u!1001 &8176206495052975841

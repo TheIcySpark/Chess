@@ -1,0 +1,23 @@
+using System.Collections;
+using NUnit.Framework;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.TestTools;
+
+public class PawnTest
+{
+
+    [OneTimeSetUp]
+    public void LoadScene()
+    {
+        SceneManager.LoadScene("SandBox/General");
+    }
+
+    [UnityTest]
+    public IEnumerator PredictNextAvailablePositions1()
+    {
+        GameObject.Find("Pawn").GetComponent<Pawn>();
+        Assert.IsTrue(pawn.IsPosAvailable(new Vector2(1.5f, 1.5f)));
+        yield return null;
+    }
+}

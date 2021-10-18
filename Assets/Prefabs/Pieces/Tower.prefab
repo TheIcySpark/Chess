@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3170538c620a3ee489e9c89081f3a8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 1
+  Settings: {fileID: 0}
   NextAvailablePositions: []
 --- !u!1001 &6443266051985899387
 PrefabInstance:
@@ -24,10 +24,18 @@ PrefabInstance:
     - target: {fileID: 1844202757957899524, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 379117033666059060, guid: 49a3a0890a6c1864d9b73a4439611ccf, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899524, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 1844202757957899525, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_Name
-      value: WhiteTower
+      value: Tower
       objectReference: {fileID: 0}
     - target: {fileID: 1844202757957899527, guid: de02a39db6b95d74fa3a2060c822cf0b, type: 3}
       propertyPath: m_RootOrder

@@ -1,17 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Piece : MonoBehaviour
+public class Piece : MonoBehaviour
 {
     public PieceSettings Settings;
     public List<Vector2> NextAvailablePositions;
-    public abstract void GenerateNextAvailablePositions();
+    public virtual void GenerateNextAvailablePositions()
+    {
+        throw new NotImplementedException();
+    }
 
     protected virtual void Start()
     {
         GetComponent<SpriteRenderer>().sprite = Settings.sprite;
-        print(Settings.sprite);
     }
 
     public bool IsPosAvailable(Vector2 pos)
@@ -20,15 +23,32 @@ public abstract class Piece : MonoBehaviour
         {
             return false;
         }
-        Collider2D collider = Physics2D.OverlapCircle(pos, 1f);
+        Collider2D collider = Physics2D.OverlapCircle(pos, 0.5f);
         if (collider)
         {
-            if(collider.gameObject.GetComponent<Piece>().Settings.Color == Settings.Color)
+            if(PieceToEatInPos(pos))
+            {
+                return true;
+            }
+            else
             {
                 return false;
             }
         }
         return true;
+    }
+
+    public bool PieceToEatInPos(Vector2 pos)
+    {
+        Collider2D collider = Physics2D.OverlapCircle(pos, 0.5f);
+        if (collider)
+        {
+            if (collider.gameObject.GetComponent<Piece>().Settings.Color != Settings.Color)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void MovePos(Vector2 pos)
