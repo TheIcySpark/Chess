@@ -19,11 +19,11 @@ public class Pawn : Piece
         }
         Vector2 posToEat1 = new Vector2(nextPos.x, nextPos.y);
         Vector2 posToEat2 = new Vector2(nextPos.x, nextPos.y);
-        if (IsPosAvailable(posToEat1))
+        if (PieceToEatInPos(posToEat1))
         {
             NextAvailablePositions.Add(posToEat1);
         }
-        if (IsPosAvailable(posToEat2))
+        if (PieceToEatInPos(posToEat2))
         {
             NextAvailablePositions.Add(posToEat2);
         }

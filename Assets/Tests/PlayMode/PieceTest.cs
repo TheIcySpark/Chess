@@ -40,7 +40,7 @@ public class PieceTest
         for(int i = 0; i < availablePositions.transform.childCount; i++)
         {
             Transform availablePosition = availablePositions.transform.GetChild(i);
-            //Assert.IsTrue(whitePiece.IsPosAvailable(availablePosition.transform.position));
+            Assert.IsTrue(whitePiece.IsPosAvailable(availablePosition.transform.position));
             Assert.IsTrue(blackPiece.IsPosAvailable(availablePosition.transform.position));
         }
 
